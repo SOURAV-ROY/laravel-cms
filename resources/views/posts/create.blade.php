@@ -7,7 +7,7 @@
             Create Post
         </h4>
         <div class="card-body">
-            <form action="{{route('posts.store')}}" method="POST">
+            <form action="{{route('posts.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
 
                 <div class="form-group">
@@ -22,19 +22,18 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="content">Content</label>
-                    <textarea name="content" id="content" class="form-control" cols="3" rows="3"></textarea>
+                    <label for="subtitle">SubTitle</label>
+                    <textarea name="subtitle" id="subtitle" class="form-control" cols="2" rows="2"></textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="published_at">Published At</label>
-                    <input type="date" name="published_at" id="published_at" class="form-control">
+                    <input type="text" name="published_at" id="published_at" class="form-control">
                 </div>
 
                 <div class="form-group">
                     <label for="image">Image</label>
                     <input type="file" name="image" id="image" class="form-control">
-
                 </div>
 
                 <div class="form-group text-center">
