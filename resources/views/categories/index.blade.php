@@ -16,13 +16,19 @@
                 <thead class="thead-light">
                 <tr>
                     <th scope="col">NAME</th>
+                    <th></th>
                 </tr>
                 </thead>
 
                 <tbody>
                 @foreach($categories as $category)
                     <tr>
-                        <td>{{$category->name}}</td>
+                        <td>
+                            {{$category->name}}
+                        </td>
+                        <td>
+                            <a href="{{route('categories.edit',$category->id)}}" class="btn btn-info">EDIT</a>
+                        </td>
                     </tr>
                 @endforeach
                 </tbody>
