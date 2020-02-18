@@ -97,7 +97,7 @@
                                 <a href="#">POSTS</a>
                             </li>
                             <li class="list-group-item">
-                                <a href="#">CATEGORIES</a>
+                                <a href="{{route('categories.index')}}">CATEGORIES</a>
                             </li>
                         </ul>
 

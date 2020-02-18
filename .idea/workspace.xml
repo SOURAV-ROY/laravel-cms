@@ -4,7 +4,7 @@
     <list default="true" id="71391d04-e37f-4ad0-b7bf-2226da1022ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/cmd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/cmd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CreateCategoryRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CreateCategoryRequest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +163,7 @@
       <workItem from="1581922850490" duration="6365000" />
       <workItem from="1581934075903" duration="5622000" />
       <workItem from="1581959125900" duration="1264000" />
-      <workItem from="1582000865769" duration="1381000" />
+      <workItem from="1582000865769" duration="1894000" />
     </task>
     <servers />
   </component>
