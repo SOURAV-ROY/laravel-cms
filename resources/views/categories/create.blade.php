@@ -4,9 +4,9 @@
 
     <div class="card card-default">
 
-        <div class="card-header font-weight-bold">
+        <h4 class="card-header font-weight-bold text-center">
             {{isset($category)? 'Edit Category': 'Create Category'}}
-        </div>
+        </h4>
 
         <div class="card-body">
 

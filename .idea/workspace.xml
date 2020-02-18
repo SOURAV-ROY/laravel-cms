@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="71391d04-e37f-4ad0-b7bf-2226da1022ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_17_074637_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_17_074637_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +131,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/categories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/posts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -143,6 +146,7 @@
       <recent name="H:\DEVELOPMENT\htdocs\laravel\laravel-cms\app\Http\Requests\Categories" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\DEVELOPMENT\htdocs\laravel\laravel-cms\resources\views\posts" />
       <recent name="H:\DEVELOPMENT\htdocs\laravel\laravel-cms\resources\views\categories" />
     </key>
   </component>
@@ -166,7 +170,7 @@
       <workItem from="1581922850490" duration="6365000" />
       <workItem from="1581934075903" duration="5622000" />
       <workItem from="1581959125900" duration="1264000" />
-      <workItem from="1582000865769" duration="9787000" />
+      <workItem from="1582000865769" duration="12911000" />
     </task>
     <servers />
   </component>
@@ -178,10 +182,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1581920861237" />
-    <state x="518" y="292" key="NewPhpFileDialog" timestamp="1581928401356">
+    <state x="518" y="292" key="NewPhpFileDialog" timestamp="1582011488571">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="518" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1581928401356" />
+    <state x="518" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1582011488571" />
     <state x="184" y="11" key="SettingsEditor" timestamp="1581926436050">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

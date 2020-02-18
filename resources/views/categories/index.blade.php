@@ -7,7 +7,7 @@
     </div>
 
     <div class="card card-default">
-        <div class="card-header">Categories</div>
+        <h4 class="card-header text-center font-weight-bold">Categories</h4>
 
         <div class="card-body">
 
