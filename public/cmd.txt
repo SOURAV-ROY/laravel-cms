@@ -4,3 +4,5 @@ php artisan make:model Category -m
 ******************************************
 php artisan make:controller CategoriesController --resource
 ***********************************************************
+php artisan make:request CreateCategoryRequest
+***********************************************************

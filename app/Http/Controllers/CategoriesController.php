@@ -44,7 +44,7 @@ class CategoriesController extends Controller
 
         ]);
 
-        $newCategory = new Category();
+//        $newCategory = new Category();
 
         Category::create([
 
