@@ -15,6 +15,7 @@
                 <tr>
                     <th>IMAGE</th>
                     <th>TITLE</th>
+                    <th colspan="2">ACTIONS</th>
                 </tr>
                 </thead>
 
@@ -22,11 +23,19 @@
                 @foreach($posts as $post)
                     <tr>
                         <td>
-                            <img src="/storage/{{ $post->image }}" width="120px" height="60px" alt="Image">
+                            <img src="/storage/{{ $post->image }}" width="120px" height="60px" alt="Imag">
                         </td>
 
-                        <td>
+                        <td class="align-middle">
                             {{$post->title}}
+                        </td>
+
+                        <td class="align-middle">
+                            <a href="#" class="btn btn-info btn-sm">EDIT</a>
+                        </td>
+
+                        <td class="align-middle">
+                            <a href="#" class="btn btn-danger btn-sm">TRASH</a>
                         </td>
 
                     </tr>
