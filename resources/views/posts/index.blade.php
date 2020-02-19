@@ -35,7 +35,13 @@
                         </td>
 
                         <td class="align-middle">
-                            <a href="#" class="btn btn-danger btn-sm">TRASH</a>
+
+                            <form action="{{route('posts.destroy', $post->id)}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+
+                                <button type="submit" class="btn btn-danger btn-sm">TRASH</button>
+                            </form>
                         </td>
 
                     </tr>
