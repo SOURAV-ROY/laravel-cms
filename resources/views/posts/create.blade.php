@@ -23,7 +23,10 @@
 
                 <div class="form-group">
                     <label for="subtitle">SubTitle</label>
-                    <textarea name="subtitle" id="subtitle" class="form-control" cols="2" rows="2"></textarea>
+{{--                    <textarea name="subtitle" id="subtitle" class="form-control" cols="2" rows="2"></textarea>--}}
+
+                    <input id="subtitle" type="hidden" name="subtitle">
+                    <trix-editor input="subtitle"></trix-editor>
                 </div>
 
                 <div class="form-group">
@@ -43,4 +46,12 @@
             </form>
         </div>
     </div>
+@endsection
+
+@section('scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trix/1.2.1/trix.js"></script>
+@endsection
+
+@section('css')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/trix/1.2.1/trix.css">
 @endsection

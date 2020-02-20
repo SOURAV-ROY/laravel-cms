@@ -1,4 +1,4 @@
-php artisan make:model Post -m
+php artisan make:model Post -m  ******************************************* TRIX EDITOR *******
 ******************************************
 php artisan make:model Category -m
 ******************************************
