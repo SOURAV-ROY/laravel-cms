@@ -3,44 +3,66 @@
 @section('content')
     <div class="card card-default">
         <h4 class="card-header font-weight-bold text-center">
-            {{--            {{isset($category)? 'Edit Category': 'Create Category'}}--}}
-            Create Post
+
+            {{isset($post)? 'Edit Post': 'Create Post'}}
+
         </h4>
         <div class="card-body">
-            <form action="{{route('posts.store')}}" method="POST" enctype="multipart/form-data">
+            <form
+                action="{{isset($post)? route('posts.update',$post->id):  route('posts.store') }}"
+                method="POST"
+                enctype="multipart/form-data"
+            >
+
                 @csrf
+
+                @if(isset($post))
+                    @method('PUT')
+                @endif
+
 
                 <div class="form-group">
                     <label for="title">Title</label>
-                    <input type="text" name="title" id="title" class="form-control">
+                    <input type="text" name="title" id="title" class="form-control"
+                           value="{{isset($post)? $post->title: ""}}">
 
                 </div>
 
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea name="description" id="description" class="form-control" cols="5" rows="5"></textarea>
+                    <textarea name="description" id="description" class="form-control" cols="5" rows="5">
+                        {{isset($post)? $post->description : ""}}
+                    </textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="subtitle">SubTitle</label>
-                    {{--                    <textarea name="subtitle" id="subtitle" class="form-control" cols="2" rows="2"></textarea>--}}
+                    {{--<textarea name="subtitle" id="subtitle" class="form-control" cols="2" rows="2"></textarea>--}}
 
-                    <input id="subtitle" type="hidden" name="subtitle">
+                    <input id="subtitle" type="hidden" name="subtitle" value="{{isset($post)? $post->subtitle : ""}}">
                     <trix-editor input="subtitle"></trix-editor>
                 </div>
 
                 <div class="form-group">
                     <label for="published_at">Published At</label>
-                    <input type="text" name="published_at" id="published_at" class="form-control">
+                    <input type="text" name="published_at" id="published_at" class="form-control"
+                           value="{{isset($post)? $post->published_at : ""}}"
+                    >
                 </div>
-
+                @if(isset($post))
+                    <div class="form-group ">
+                        <img src="/storage/{{($post->image)}}" width="100%">
+                    </div>
+                @endif
                 <div class="form-group">
                     <label for="image">Image</label>
                     <input type="file" name="image" id="image" class="form-control">
                 </div>
 
                 <div class="form-group text-center">
-                    <button type="submit" class="btn btn-success">Create Post</button>
+                    <button type="submit" class="btn btn-success">
+                        {{isset($post)? 'Update Post' : 'Create Post'}}
+                    </button>
                 </div>
 
             </form>

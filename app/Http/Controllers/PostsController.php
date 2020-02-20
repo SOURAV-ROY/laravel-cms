@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\Posts\CreatePostRequest;
+use App\Http\Requests\Posts\UpdatePostRequest;
 use Illuminate\Http\Request;
 use App\Post;
 use Illuminate\Support\Facades\Storage;
@@ -75,9 +76,9 @@ class PostsController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Post $post)
     {
-        //
+        return view('posts.create')->with('post', $post);
     }
 
     /**
@@ -87,9 +88,25 @@ class PostsController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdatePostRequest $request, Post $post)
     {
-        //
+        $data = $request->only('title', 'description', 'subtitle', 'published_at');
+
+//        New IMAGE************
+        if ($request->hasFile('image')) {
+//            Upload Image*******************
+            $image = $request->image->store('posts');
+
+//            Delete image **************************
+            Storage::delete($post->image);
+
+            $data['image'] = $image;
+        }
+        $post->update($data);
+
+        session()->flash('success', 'Post Updated successfully ✔');
+
+        return redirect(route('posts.index'));
     }
 
     /**
@@ -100,7 +117,7 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        $post = Post::withTrashed()->where('id','LIKE', $id)->firstOrFail();
+        $post = Post::withTrashed()->where('id', 'LIKE', $id)->firstOrFail();
 
         if ($post->trashed()) {
 
