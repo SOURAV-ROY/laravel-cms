@@ -1,5 +1,5 @@
-php artisan make:model Post -m  ******************************************* TRIX EDITOR *******
-******************************************
+php artisan make:model Post -m  ******************************************* TRIX EDITOR https://github.com/basecamp/trix *******
+*************************************************************************** flatpickr https://flatpickr.js.org/ https://github.com/flatpickr/flatpickr *********
 php artisan make:model Category -m
 ******************************************
 php artisan make:controller CategoriesController --resource

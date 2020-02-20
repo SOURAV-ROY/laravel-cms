@@ -48,6 +48,7 @@ class PostsController extends Controller
             'title' => $request->title,
             'description' => $request->description,
             'subtitle' => $request->subtitle,
+            'published_at' => $request->published_at,
             'image' => $image,
         ]);
 //********************* Session message *******************
