@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71391d04-e37f-4ad0-b7bf-2226da1022ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/cms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,12 +146,12 @@
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="H:\DEVELOPMENT\htdocs\laravel\laravel-cms\app\Http\Requests\Categories" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="H:\DEVELOPMENT\htdocs\laravel\laravel-cms\resources\views\posts" />
       <recent name="H:\DEVELOPMENT\htdocs\laravel\laravel-cms\resources\views\categories" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\DEVELOPMENT\htdocs\laravel\laravel-cms\app\Http\Requests\Categories" />
     </key>
   </component>
   <component name="RunManager">
@@ -175,7 +178,7 @@
       <workItem from="1582024401744" duration="4664000" />
       <workItem from="1582043253401" duration="6144000" />
       <workItem from="1582090247847" duration="8609000" />
-      <workItem from="1582172845949" duration="1671000" />
+      <workItem from="1582172845949" duration="9379000" />
     </task>
     <servers />
   </component>
@@ -199,9 +202,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1582026551810" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1582009788705">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1582176439745">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1582009788705" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1582176439745" />
   </component>
 </project>

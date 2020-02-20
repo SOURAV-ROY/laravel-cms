@@ -11,37 +11,44 @@
 
         <div class="card-body">
 
-            <table class="table table-bordered text-center">
+            @if($categories->count()>0)
 
-                <thead class="thead-light">
-                <tr>
-                    <th scope="col">NAME</th>
-                    <th colspan="2">ACTIONS</th>
-                </tr>
-                </thead>
+                <table class="table table-bordered text-center">
 
-                <tbody class="text-center">
-                @foreach($categories as $category)
+                    <thead class="thead-light">
                     <tr>
-                        <td>
-                            {{$category->name}}
-                        </td>
-                        <td>
-                            <a href="{{route('categories.edit',$category->id)}}"
-                               class="btn btn-info btn-sm">EDIT</a>
-                        </td>
-                        <td>
-                            <button class="btn btn-danger btn-sm" onclick="handleDelete({{$category->id}})">DELETE
-                            </button>
-                        </td>
+                        <th scope="col">NAME</th>
+                        <th colspan="2">ACTIONS</th>
                     </tr>
-                @endforeach
-                </tbody>
+                    </thead>
 
-            </table>
+                    <tbody class="text-center">
+
+                    @foreach($categories as $category)
+                        <tr>
+                            <td>
+                                {{$category->name}}
+                            </td>
+                            <td>
+                                <a href="{{route('categories.edit',$category->id)}}"
+                                   class="btn btn-info btn-sm">EDIT</a>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-sm" onclick="handleDelete({{$category->id}})">DELETE
+                                </button>
+                            </td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+
+                </table>
+
+            @else
+                <h3 class="text-center">NO Categories Yet!!</h3>
+        @endif
 
 
-            <!-- Modal -->
+        <!-- Modal -->
             <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
                  aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -61,7 +68,7 @@
                                 <p class="text-center font-weight-bold">
                                     Are You Sure Delete Category !!
                                 </p>
-                                {{--                                <h2>{{$category->name}}</h2>--}}
+                                {{--<h2>{{$category->name}}</h2>--}}
 
                             </div>
                             <div class="modal-footer">
@@ -82,7 +89,7 @@
 @section('scripts')
     <script>
         function handleDelete(id) {
-            var form = document.getElementById('deleteCategoryForm');
+            let form = document.getElementById('deleteCategoryForm');
             form.action = '/categories/' + id;
 
             console.log('delete call', form);
