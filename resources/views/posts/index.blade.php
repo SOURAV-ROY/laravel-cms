@@ -27,7 +27,7 @@
                     @foreach($posts as $post)
                         <tr>
                             <td>
-                                <img src="/storage/{{ $post->image }}" width="120px" height="60px" alt="Imag">
+                                <img src="/storage/{{ $post->image }}" width="120px" height="80px" alt="Imag">
                             </td>
 
                             <td class="align-middle">

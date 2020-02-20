@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\Posts\CreatePostRequest;
 use Illuminate\Http\Request;
 use App\Post;
+use Illuminate\Support\Facades\Storage;
 
 class PostsController extends Controller
 {
@@ -101,6 +102,9 @@ class PostsController extends Controller
         $post = Post::withTrashed()->where('id','LIKE', $id)->firstOrFail();
 
         if ($post->trashed()) {
+
+//            Deleted Permanently Form Storage *****************
+            Storage::delete($post->image);
 
             $post->forceDelete();
 
