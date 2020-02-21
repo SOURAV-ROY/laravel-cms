@@ -6,7 +6,6 @@ use App\Http\Requests\Posts\CreatePostRequest;
 use App\Http\Requests\Posts\UpdatePostRequest;
 use Illuminate\Http\Request;
 use App\Post;
-use Illuminate\Support\Facades\Storage;
 
 class PostsController extends Controller
 {
@@ -97,11 +96,14 @@ class PostsController extends Controller
 //            Upload Image*******************
             $image = $request->image->store('posts');
 
-//            Delete image **************************
-            Storage::delete($post->image);
+//          Delete image **************************
+//          Storage::delete($post->image);
+
+            $post->deleteImage();
 
             $data['image'] = $image;
         }
+
         $post->update($data);
 
         session()->flash('success', 'Post Updated successfully ✔');
@@ -121,8 +123,10 @@ class PostsController extends Controller
 
         if ($post->trashed()) {
 
-//            Deleted Permanently Form Storage *****************
-            Storage::delete($post->image);
+//          Deleted Permanently Form Storage *****************
+//            Storage::delete($post->image);
+
+            $post->deleteImage();
 
             $post->forceDelete();
 
@@ -145,7 +149,7 @@ class PostsController extends Controller
 
     public function trashed()
     {
-        $trashed = Post::withTrashed()->get();
+        $trashed = Post::onlyTrashed()->get();
 
         return view('posts.index')->with('posts', $trashed);
     }
