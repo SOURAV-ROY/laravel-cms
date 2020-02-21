@@ -87,9 +87,9 @@
                     </div>
                 @endif
 
-                @if(session()->has('error'))
-                    <div class="alert alert-danger">
-                        {{session()->get('error')}}
+                @if(session()->has('warning'))
+                    <div class="alert alert-warning">
+                        {{session()->get('warning')}}
 
                     </div>
                 @endif

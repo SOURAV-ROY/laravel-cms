@@ -37,7 +37,7 @@
 
                             <td>
                                 <a href="{{route('categories.edit',$category->id)}}"
-                                   class="btn btn-info btn-sm">EDIT</a>
+                                   class="btn btn-secondary btn-sm">EDIT</a>
                             </td>
 
                             <td>
