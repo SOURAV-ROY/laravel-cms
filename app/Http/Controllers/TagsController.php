@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Tag;
 use App\Http\Requests\Tags\CreateTagRequest;
 use App\Http\Requests\Tags\UpdateTagRequest;
@@ -18,10 +17,10 @@ class TagsController extends Controller
     {
 //        GET COLLECTIONS ***************************************************
 
-//        dd(Category::first()->posts()->where('published_at', now())->get());
-//        dd(Category::first()->posts()->get());
+//        dd(Tag::first()->posts()->where('published_at', now())->get());
+//        dd(Tag::first()->posts()->get());
 
-//        dd(Category::first()->posts);
+//        dd(Tag::first()->posts);
 
         return view('tags.index')->with('tags', Tag::all());
     }
@@ -48,11 +47,11 @@ class TagsController extends Controller
         //
 //        $this->validate($request, [
 //
-//            'name' => 'required|unique:categories'
+//            'name' => 'required|unique:tags'
 //
 //        ]);
 
-//        $newCategory = new Category();
+//        $newTag = new Tag();
 
         Tag::create([
 
@@ -98,8 +97,8 @@ class TagsController extends Controller
 
     public function update(UpdateTagRequest $request, Tag $tag)
     {
-//        $category->name = $request->name;
-//        $category->save();
+//        $tag->name = $request->name;
+//        $tag->save();
 
         $tag->update([
 
