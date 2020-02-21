@@ -8,6 +8,9 @@
 
         </h4>
         <div class="card-body">
+            {{--************************* Any Errors Catch Here *************************** --}}
+            @include('partials.errors')
+
             <form
                 action="{{isset($post)? route('posts.update',$post->id):  route('posts.store') }}"
                 method="POST"

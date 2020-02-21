@@ -11,17 +11,19 @@
         <div class="card-body">
 
             {{--****************************************ERROR MESSAGE****************************************--}}
-            @if($errors->any())
-                <div class="alert alert-danger">
-                    <ul class="list-group">
-                        @foreach($errors->all() as $error)
-                            <li class="list-group-item text-danger">
-                                {{$error}}
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
+            @include('partials.errors')
+
+            {{--            @if($errors->any())--}}
+            {{--                <div class="alert alert-danger">--}}
+            {{--                    <ul class="list-group">--}}
+            {{--                        @foreach($errors->all() as $error)--}}
+            {{--                            <li class="list-group-item text-danger">--}}
+            {{--                                {{$error}}--}}
+            {{--                            </li>--}}
+            {{--                        @endforeach--}}
+            {{--                    </ul>--}}
+            {{--                </div>--}}
+            {{--            @endif--}}
             {{--************************************* END ERROR MESSAGE****************************************--}}
 
             <form action="{{isset($tag)
