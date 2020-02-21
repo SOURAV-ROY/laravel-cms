@@ -24,4 +24,10 @@ php artisan migrate:rollback
 php artisan make:request Posts/UpdatePostRequest
 ***********************************************************
 php artisan migrate:refresh --seed
-***********************************************************
+*********************************************************** 
+php artisan down  -> Application is now in maintenance mode.
+**********************************************************
+php artisan up    -> Application is now live.
+************************************************************
+php artisan make:middleware VerifyCategoriesCount
+************************************************************
