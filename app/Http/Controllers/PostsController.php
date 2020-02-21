@@ -153,4 +153,16 @@ class PostsController extends Controller
 
         return view('posts.index')->with('posts', $trashed);
     }
+
+    public function restore($id)
+    {
+        $post = Post::withTrashed()->where('id', 'LIKE', $id)->firstOrFail();
+
+        $post->restore();
+
+        //********************* Session message *******************
+        session()->flash('success', 'Post Restore successfully 💚');
+
+        return redirect()->back();
+    }
 }
