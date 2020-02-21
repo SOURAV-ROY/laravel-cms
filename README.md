@@ -2,8 +2,8 @@
 
 ## About CMS ##
 
-**CATEGORIES**
-http://127.0.0.1:8000/categories
+**CATEGORIES** http://127.0.0.1:8000/categories
+-----------------------------------------------
 
 **1. Create Category**
 
@@ -16,8 +16,8 @@ http://127.0.0.1:8000/categories
 2. ACTIONS
 ```
 
-**POSTS**
-http://127.0.0.1:8000/posts
+**POSTS** http://127.0.0.1:8000/posts
+-------------------------------------
 
 
 **1. Create Post**
