@@ -16,7 +16,13 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        //
+//        GET COLLECTIONS ***************************************************
+
+//        dd(Category::first()->posts()->where('published_at', now())->get());
+//        dd(Category::first()->posts()->get());
+
+//        dd(Category::first()->posts);
+
         return view('categories.index')->with('categories', Category::all());
     }
 

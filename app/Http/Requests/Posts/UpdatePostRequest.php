@@ -28,6 +28,7 @@ class UpdatePostRequest extends FormRequest
             'title' => 'required',
             'description' => 'required',
             'subtitle' => 'required',
+            'category' => 'required'
         ];
     }
 }

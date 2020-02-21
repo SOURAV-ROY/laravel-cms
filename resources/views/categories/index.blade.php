@@ -18,6 +18,7 @@
                     <thead class="thead-light">
                     <tr>
                         <th scope="col">NAME</th>
+                        <th scope="col">Post Count</th>
                         <th colspan="2">ACTIONS</th>
                     </tr>
                     </thead>
@@ -29,10 +30,16 @@
                             <td>
                                 {{$category->name}}
                             </td>
+
+                            <td>
+                                {{$category->posts->count()}}
+                            </td>
+
                             <td>
                                 <a href="{{route('categories.edit',$category->id)}}"
                                    class="btn btn-info btn-sm">EDIT</a>
                             </td>
+
                             <td>
                                 <button class="btn btn-danger btn-sm" onclick="handleDelete({{$category->id}})">DELETE
                                 </button>

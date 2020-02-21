@@ -13,7 +13,7 @@ class Post extends Model
 
     protected $fillable = [
 
-        'title', 'description', 'subtitle', 'image', 'published_at'
+        'title', 'description', 'subtitle', 'image', 'published_at', 'category_id'
     ];
 
     /**
@@ -23,5 +23,10 @@ class Post extends Model
     public function deleteImage()
     {
         Storage::delete($this->image);
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
     }
 }

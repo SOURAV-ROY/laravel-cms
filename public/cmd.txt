@@ -23,4 +23,5 @@ php artisan migrate:rollback
 ****************************************
 php artisan make:request Posts/UpdatePostRequest
 ***********************************************************
-
+php artisan migrate:refresh --seed
+***********************************************************

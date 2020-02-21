@@ -18,6 +18,7 @@
                     <tr>
                         <th>IMAGE</th>
                         <th>TITLE</th>
+                        <th>CATEGORY</th>
                         <th colspan="2">ACTIONS</th>
                     </tr>
                     </thead>
@@ -32,6 +33,14 @@
 
                             <td class="align-middle">
                                 {{$post->title}}
+                            </td>
+
+                            <td class="align-middle">
+
+                                <a href="{{route('categories.edit', $post->category->id)}}">
+                                    {{$post->category->name}}
+                                </a>
+
                             </td>
 
                             @if($post->trashed())
