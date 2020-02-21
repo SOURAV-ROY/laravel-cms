@@ -31,3 +31,7 @@ php artisan up    -> Application is now live.
 ************************************************************
 php artisan make:middleware VerifyCategoriesCount
 ************************************************************
+php artisan make:model Tag -m
+************************************************************
+php artisan make:controller TagsController --resource
+***********************************************************

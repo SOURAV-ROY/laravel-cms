@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71391d04-e37f-4ad0-b7bf-2226da1022ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCategoriesCount.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCategoriesCount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/cmd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/cmd.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +134,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/posts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/tags" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -144,6 +146,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\DEVELOPMENT\htdocs\laravel\laravel-cms\resources\views\tags" />
+      <recent name="H:\DEVELOPMENT\htdocs\laravel\laravel-cms\app\Http\Requests\Tags" />
+      <recent name="H:\DEVELOPMENT\htdocs\laravel\laravel-cms\app\Http\Controllers" />
       <recent name="H:\DEVELOPMENT\htdocs\laravel\laravel-cms\resources\views\posts" />
       <recent name="H:\DEVELOPMENT\htdocs\laravel\laravel-cms\resources\views\categories" />
     </key>
@@ -178,7 +183,10 @@
       <workItem from="1582172845949" duration="14713000" />
       <workItem from="1582210805632" duration="624000" />
       <workItem from="1582214287552" duration="6225000" />
-      <workItem from="1582261119462" duration="14825000" />
+      <workItem from="1582261119462" duration="16491000" />
+      <workItem from="1582288118925" duration="2924000" />
+      <workItem from="1582301232255" duration="83000" />
+      <workItem from="1582301350737" duration="4908000" />
     </task>
     <servers />
   </component>
@@ -186,10 +194,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1581920861237">
+    <state x="363" y="96" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582301310113">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1581920861237" />
+    <state x="363" y="96" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1582301310113" />
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1582290170866">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1582290170866" />
     <state x="518" y="292" key="NewPhpFileDialog" timestamp="1582011488571">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -202,9 +214,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1582026551810" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1582274500329">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1582311766146">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1582274500329" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1582311766146" />
   </component>
 </project>

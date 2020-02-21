@@ -37,6 +37,8 @@ Route::middleware(['auth'])->group(function () {
 
     Route::resource('posts', 'PostsController');
 
+    Route::resource('tags', 'TagsController');
+
     Route::get('trashed-posts', 'PostsController@trashed')->name('trashed-posts.index');
 
     Route::put('restore-post/{post}', 'PostsController@restore')->name('restore-posts');

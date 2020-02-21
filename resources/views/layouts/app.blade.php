@@ -96,7 +96,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-4">
+                    <div class="col-md-3 text-center">
 
                         <ul class="list-group">
                             <li class="list-group-item">
@@ -105,6 +105,10 @@
 
                             <li class="list-group-item">
                                 <a href="{{route('categories.index')}}">CATEGORIES</a>
+                            </li>
+
+                            <li class="list-group-item">
+                                <a href="{{route('tags.index')}}">TAGS</a>
                             </li>
                         </ul>
 
@@ -116,7 +120,7 @@
 
                     </div>
 
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         @yield('content')
                     </div>
                 </div>
