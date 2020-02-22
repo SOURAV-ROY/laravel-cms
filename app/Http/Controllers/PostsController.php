@@ -45,14 +45,14 @@ class PostsController extends Controller
      */
     public function store(CreatePostRequest $request)
     {
-        dd($request->all());
+//        dd($request->all());
 //*********************Upload the image to storage *******************
 
 //        dd($request->image->store('posts'));
         $image = $request->image->store('posts');
 
 //********************* Post Create *******************
-        Post::create([
+        $post = Post::create([
 
             'title' => $request->title,
             'description' => $request->description,
@@ -61,6 +61,10 @@ class PostsController extends Controller
             'published_at' => $request->published_at,
             'category_id' => $request->category
         ]);
+
+        if ($request->tags) {
+            $post->tags()->attach($request->tags);
+        }
 //********************* Session message *******************
         session()->flash('success', 'POST Create successfully!');
 
