@@ -35,3 +35,7 @@ php artisan make:model Tag -m
 ************************************************************
 php artisan make:controller TagsController --resource
 ***********************************************************
+php artisan make:migration create_post_tag_table --table=post_tag
+***********************************************************************
+php artisan make:migration create_post_tag_table ***BETTER CHOICE *****
+***********************************************************************
