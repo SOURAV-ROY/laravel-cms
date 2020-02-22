@@ -91,6 +91,8 @@ class PostsController extends Controller
      */
     public function edit(Post $post)
     {
+//        dd($post->tags->pluck('id')->toArray());
+
         return view('posts.create')->with('post', $post)->with('categories', Category::all())->with('tags', Tag::all());
     }
 
@@ -118,6 +120,12 @@ class PostsController extends Controller
             $data['image'] = $image;
         }
 
+//**********************Tags Update Selected ***************************************
+        if ($request->tags){
+            $post->tags()->sync($request->tags);
+        }
+        
+//****************Update Attributes **************
         $post->update($data);
 
         session()->flash('success', 'Post Updated successfully ✔');
