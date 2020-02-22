@@ -33,13 +33,13 @@
 
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea name="description" id="description" class="form-control" cols="5" rows="5">
+                    <textarea name="description" id="description" class="form-control" cols="4" rows="4">
                         {{isset($post)? $post->description : ""}}
                     </textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="subtitle">SubTitle</label>
+                    <label for="subtitle">Content</label>
                     {{--<textarea name="subtitle" id="subtitle" class="form-control" cols="2" rows="2"></textarea>--}}
 
                     <input id="subtitle" type="hidden" name="subtitle" value="{{isset($post)? $post->subtitle : ""}}">
@@ -63,9 +63,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="category">Category</label>
+                    <label for="tags">Category</label>
 
-                    <select name="category" id="category" class="form-control">
+                    <select name="tags" id="tags" class="form-control">
                         @foreach($categories as $category)
 
                             <option
@@ -84,11 +84,21 @@
 
                         @endforeach
                     </select>
-
                 </div>
 
-                {{--************************* Any Errors Catch Here *************************** --}}
-                {{--@include('partials.errors')--}}
+                @if($tags->count() > 0)
+                    <div class="form-group">
+                        <label for="tags">Tags</label>
+
+                        <select name="tags" id="tags" class="form-control" multiple>
+                            @foreach($tags as $tag)
+                                <option value="{{$tag->id}}">
+                                    {{$tag->name}}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
+                @endif
 
                 <div class="form-group text-center">
                     <button type="submit" class="btn btn-success">
