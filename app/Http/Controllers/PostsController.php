@@ -124,7 +124,7 @@ class PostsController extends Controller
         if ($request->tags){
             $post->tags()->sync($request->tags);
         }
-        
+
 //****************Update Attributes **************
         $post->update($data);
 

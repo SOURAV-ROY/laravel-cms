@@ -90,7 +90,7 @@
                     <div class="form-group">
                         <label for="tags">Tags</label>
 
-                        <select name="tags[]" id="tags" class="form-control" multiple>
+                        <select name="tags[]" id="tags" class="form-control tag-selector" multiple>
                             @foreach($tags as $tag)
                                 <option value="{{$tag->id}}"
 
@@ -121,17 +121,23 @@
 @section('scripts')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/trix/1.2.1/trix.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
 
     <script>
         flatpickr('#published_at',
             {
                 enableTime: true
             })
+
+        // In your Javascript (external .js resource or <script> tag)
+        $(document).ready(function () {
+            $('.tag-selector').select2();
+        });
     </script>
 @endsection
 
 @section('css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/trix/1.2.1/trix.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet"/>
 @endsection
