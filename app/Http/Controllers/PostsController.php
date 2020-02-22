@@ -45,6 +45,7 @@ class PostsController extends Controller
      */
     public function store(CreatePostRequest $request)
     {
+        dd($request->all());
 //*********************Upload the image to storage *******************
 
 //        dd($request->image->store('posts'));
@@ -56,8 +57,8 @@ class PostsController extends Controller
             'title' => $request->title,
             'description' => $request->description,
             'subtitle' => $request->subtitle,
-            'published_at' => $request->published_at,
             'image' => $image,
+            'published_at' => $request->published_at,
             'category_id' => $request->category
         ]);
 //********************* Session message *******************
