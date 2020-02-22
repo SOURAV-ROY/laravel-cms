@@ -87,6 +87,9 @@
 
                 </div>
 
+                {{--************************* Any Errors Catch Here *************************** --}}
+                {{--@include('partials.errors')--}}
+
                 <div class="form-group text-center">
                     <button type="submit" class="btn btn-success">
                         {{isset($post)? 'Update Post' : 'Create Post'}}
