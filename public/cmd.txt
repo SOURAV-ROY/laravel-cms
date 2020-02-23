@@ -39,3 +39,13 @@ php artisan make:migration create_post_tag_table --table=post_tag
 ***********************************************************************
 php artisan make:migration create_post_tag_table ***BETTER CHOICE *****
 ***********************************************************************
+php artisan make:seeder UsersTableSeeder
+************************************************************
+php artisan migrate:refresh
+php artisan db:seed
+php artisan migrate:refresh --seed
+************************************************************
+php artisan tinker
+************************************************************
+php artisan make:controller UsersController
+***********************************************************
