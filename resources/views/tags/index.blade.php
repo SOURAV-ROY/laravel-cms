@@ -97,9 +97,7 @@
         function handleDelete(id) {
             let form = document.getElementById('deleteTagForm');
             form.action = '/tags/' + id;
-
-            console.log('delete call', form);
-
+            // console.log('delete call', form);
             $('#deleteModal').modal('show')
         }
     </script>

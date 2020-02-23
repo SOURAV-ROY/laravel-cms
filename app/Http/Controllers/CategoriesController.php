@@ -123,14 +123,14 @@ class CategoriesController extends Controller
     {
         if ($category->posts->count() > 0) {
 
-            session()->flash('error', 'Category Can Not Be Deleted Because It Is Associated Some Posts!!!');
+            session()->flash('warning', 'Category Can Not Be Deleted Because It Is Associated Some Posts!!!');
 
             return redirect()->back();
         }
 
         $category->delete();
 
-        session()->flash('success', 'Category Deleted Successfully !!!');
+        session()->flash('error', 'Category Deleted Successfully !!!');
 
         return redirect(route('categories.index'));
     }

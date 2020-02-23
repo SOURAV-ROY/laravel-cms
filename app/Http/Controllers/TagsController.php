@@ -121,14 +121,14 @@ class TagsController extends Controller
     {
         if ($tag->posts->count() > 0) {
 
-            session()->flash('error', 'Tag Can Not Be Deleted Because It Has Some Posts!!!');
+            session()->flash('warning', 'Tag Can Not Be Deleted Because It Has Some Posts!!!');
 
             return redirect()->back();
         }
 
         $tag->delete();
 
-        session()->flash('success', 'Tag Deleted Successfully !!!');
+        session()->flash('error', 'Tag Deleted Successfully !!!');
 
         return redirect(route('tags.index'));
     }
