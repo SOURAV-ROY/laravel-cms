@@ -55,3 +55,5 @@ php artisan make:middleware VerifyIsAdmin
 ***********************************************************
 composer update 
 *****************************************************
+php artisan make:request Users/UpdateProfileRequest
+******************************************************
