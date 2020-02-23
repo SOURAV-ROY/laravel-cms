@@ -49,3 +49,15 @@
 ```
 
 ## Relationship Between POST To Category
+### One To Many
+```
+1 Post 1 category
+1 Category Many Post
+```
+
+## Relationship Between POST To Tags
+### Many To Many
+```
+1 Post Many Tags
+1 Tag Many Posts
+```
