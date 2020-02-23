@@ -66,6 +66,7 @@ class Kernel extends HttpKernel
 
 //*******************ADDED MIDDLEWARE ******************************************
         'verifyCategoriesCount' => VerifyCategoriesCount::class,
+
 //*******************ADMIN MIDDLEWARE ******************************************
         'admin' => VerifyIsAdmin::class
 

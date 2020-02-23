@@ -18,6 +18,7 @@ class UsersTableSeeder extends Seeder
         if (!$user) {
 
             User::create([
+
                 'name' => 'ADMIN',
                 'email' => 'admin@gmail.com',
                 'role' => 'admin',
