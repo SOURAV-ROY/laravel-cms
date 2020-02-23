@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="card card-default">
-        <h4 class="card-header text-center font-weight-bold">Users</h4>
+        <h4 class="card-header text-center font-weight-bold">USERS</h4>
 
         <div class="card card-body">
 
@@ -25,7 +25,8 @@
                     @foreach($users as $user)
                         <tr>
                             <td>
-                                Image
+                                {{--{{Gravatar::src($user->email)}}--}}
+                                <img src="{{Gravatar::src($user->email)}}" height="50px" width="50px" style="border-radius: 30%">
                             </td>
 
                             <td class="align-middle">
