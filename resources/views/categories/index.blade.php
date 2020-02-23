@@ -10,7 +10,6 @@
         <h4 class="card-header text-center font-weight-bold">Categories</h4>
 
         <div class="card-body">
-
             @if($categories->count()>0)
 
                 <table class="table table-bordered text-center">
