@@ -16,6 +16,7 @@
                         <th>IMAGE</th>
                         <th>NAME</th>
                         <th>EMAIL</th>
+                        <th>ACTION</th>
                     </tr>
                     </thead>
 
@@ -30,8 +31,15 @@
                             <td class="align-middle">
                                 {{$user->name}}
                             </td>
+
                             <td class="align-middle">
                                 {{$user->email}}
+                            </td>
+
+                            <td class="align-middle">
+                                @if(!$user->isAdmin())
+                                    <button class="btn btn-success btn-sm">Make ADMIN</button>
+                                @endif
                             </td>
                         </tr>
 

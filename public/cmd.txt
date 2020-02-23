@@ -49,3 +49,5 @@ php artisan tinker
 ************************************************************
 php artisan make:controller UsersController
 ***********************************************************
+php artisan make:middleware VerifyIsAdmin
+***********************************************************
