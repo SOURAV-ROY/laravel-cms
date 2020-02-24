@@ -29,7 +29,7 @@ class UsersController extends Controller
             'about' => $request->about
         ]);
 
-        session()->flash('success', 'User Updated Successfully');
+        session()->flash('success', 'User Profile Updated Successfully');
 
         return redirect()->back();
     }
@@ -40,7 +40,7 @@ class UsersController extends Controller
 
         $user->save();
 
-        session()->flash('success', 'User Make Admin Successfully !!! ');
+        session()->flash('success', 'Make Admin Successfully !!! ');
 
         return redirect(route('users.index'));
     }

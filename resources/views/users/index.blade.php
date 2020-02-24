@@ -26,7 +26,7 @@
                         <tr>
                             <td>
                                 {{--{{Gravatar::src($user->email)}}--}}
-                                <img src="{{Gravatar::src($user->email)}}" height="50px" width="50px" style="border-radius: 30%">
+                                <img src="{{Gravatar::src($user->email)}}" height="30px" width="30px" style="border-radius: 30%">
                             </td>
 
                             <td class="align-middle">
