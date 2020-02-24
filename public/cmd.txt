@@ -57,3 +57,7 @@ composer update
 *****************************************************
 php artisan make:request Users/UpdateProfileRequest
 ******************************************************
+php artisan make:seeder PostsTableSeeder
+******************************************************
+php artisan migrate:refresh --seed
+******************************************************
