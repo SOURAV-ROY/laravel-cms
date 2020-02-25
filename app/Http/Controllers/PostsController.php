@@ -59,7 +59,8 @@ class PostsController extends Controller
             'subtitle' => $request->subtitle,
             'image' => $image,
             'published_at' => $request->published_at,
-            'category_id' => $request->category
+            'category_id' => $request->category,
+            'user_id' => auth()->user()->id
         ]);
 
         if ($request->tags) {
@@ -121,7 +122,7 @@ class PostsController extends Controller
         }
 
 //**********************Tags Update Selected ***************************************
-        if ($request->tags){
+        if ($request->tags) {
             $post->tags()->sync($request->tags);
         }
 

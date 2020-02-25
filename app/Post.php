@@ -13,7 +13,7 @@ class Post extends Model
 
     protected $fillable = [
 
-        'title', 'description', 'subtitle', 'image', 'published_at', 'category_id'
+        'title', 'description', 'subtitle', 'image', 'published_at', 'category_id', 'user_id'
     ];
 
     /**
@@ -43,5 +43,10 @@ class Post extends Model
     public function hasTag($tagId)
     {
         return in_array($tagId, $this->tags->pluck('id')->toArray());
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }

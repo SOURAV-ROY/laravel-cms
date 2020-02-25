@@ -2,7 +2,9 @@
 
 use App\Post;
 use App\Tag;
+use App\User;
 use App\Category;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Database\Seeder;
 
 class PostsTableSeeder extends Seeder
@@ -14,6 +16,23 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
+        $author1 = User::create([
+            'name' => 'SOURAV ROY',
+            'email' => 'sourav@gmail.com',
+            'password' => Hash::make('password')
+        ]);
+
+        $author2 = User::create([
+            'name' => ' AMI TUMI',
+            'email' => 'amitumi@gmail.com',
+            'password' => Hash::make('password')
+        ]);
+
+        $author3 = User::create([
+            'name' => ' AMI TUMI SHE',
+            'email' => 'ats@gmail.com',
+            'password' => Hash::make('password')
+        ]);
 
 //********************************CATEGORY**********************************************
 
@@ -37,10 +56,11 @@ class PostsTableSeeder extends Seeder
             'description' => 'Some Descriptions Here ........................',
             'subtitle' => 'User more Content --------------------------------',
             'category_id' => $category1->id,
-            'image' => 'posts/1.jpg'
+            'image' => 'posts/1.jpg',
+            'user_id' => $author1->id
         ]);
 
-        $post2 = Post::create([
+        $post2 = $author2->posts()->create([
 
             'title' => 'Top 5 brilliant content marketing strategies',
             'description' => 'Some Descriptions Here ........................',
@@ -49,7 +69,7 @@ class PostsTableSeeder extends Seeder
             'image' => 'posts/2.jpg'
         ]);
 
-        $post3 = Post::create([
+        $post3 = $author1->posts()->create([
 
             'title' => 'Best practices for minimalist design with example',
             'description' => 'Some Descriptions Here ........................',
@@ -58,7 +78,7 @@ class PostsTableSeeder extends Seeder
             'image' => 'posts/3.jpg'
         ]);
 
-        $post4 = Post::create([
+        $post4 = $author3->posts()->create([
 
             'title' => 'Congratulate and thank to Maryam for joining our team',
             'description' => 'Some Descriptions Here ........................',
