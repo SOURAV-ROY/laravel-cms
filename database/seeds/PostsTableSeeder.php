@@ -16,6 +16,8 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
+
+//********************************AUTHOR**********************************************
         $author1 = User::create([
             'name' => 'SOURAV ROY',
             'email' => 'sourav@gmail.com',
