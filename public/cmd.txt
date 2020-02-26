@@ -65,3 +65,7 @@ php artisan make:controller WelcomeController
 ******************************************************
 php artisan make:controller Blog/PostsController
 ******************************************************
+php artisan vendor:publish
+******************************************************
+{{$posts->appends(['search'=> request()->query('search')])->links()}}
+***********************************************************************
