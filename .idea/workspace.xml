@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71391d04-e37f-4ad0-b7bf-2226da1022ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +192,7 @@
       <workItem from="1582431718930" duration="17601000" />
       <workItem from="1582517027500" duration="14183000" />
       <workItem from="1582615194855" duration="8636000" />
-      <workItem from="1582701200368" duration="7405000" />
+      <workItem from="1582701200368" duration="9748000" />
     </task>
     <servers />
   </component>
@@ -206,10 +208,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1582290170866" />
-    <state x="518" y="292" key="NewPhpFileDialog" timestamp="1582531657401">
+    <state x="518" y="292" key="NewPhpFileDialog" timestamp="1582710496443">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="518" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1582531657401" />
+    <state x="518" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1582710496443" />
     <state x="184" y="11" key="SettingsEditor" timestamp="1581926436050">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
