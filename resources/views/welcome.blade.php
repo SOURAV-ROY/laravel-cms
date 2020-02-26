@@ -32,7 +32,7 @@
                     <div class="col-md-8 col-xl-9">
                         <div class="row gap-y">
 
-                            @foreach($posts as $post)
+                            @forelse($posts as $post)
 
                                 <div class="col-md-6">
                                     <div class="card border hover-shadow-6 mb-6 d-block">
@@ -57,7 +57,17 @@
                                         </div>
                                     </div>
                                 </div>
-                            @endforeach
+
+                            @empty
+
+                                <h2 class="text-center text-info">
+                                    No Result Found For Query 😎 😛
+                                    <h1 class="font-weight-bold text-danger">
+                                        <strong>{{request()->query('search')}}</strong>
+                                    </h1>
+                                </h2>
+
+                            @endforelse
 
                         </div>
 
@@ -73,10 +83,18 @@
                             <h6 class="sidebar-title">Search</h6>
 
                             <form class="input-group" action="{{route('welcome')}}" method="GET">
-                                <input type="text" class="form-control" name="search" placeholder="Search">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="search"
+                                    placeholder="Search"
+                                    value="{{request()->query('search')}}"
+                                >
+
                                 <div class="input-group-add on">
                                     <span class="input-group-text"><i class="ti-search"></i></span>
                                 </div>
+
                             </form>
 
                             <hr>
