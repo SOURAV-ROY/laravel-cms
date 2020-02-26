@@ -1,7 +1,7 @@
 @extends('layouts.blog')
 
 @section('title')
-    TAG || {{$tag->name}}
+    TAG |> {{$tag->name}}
 @endsection
 
 @section('header')
