@@ -3,7 +3,7 @@
 
         <h6 class="sidebar-title">Search</h6>
 
-        <form class="input-group" action="{{route('welcome')}}" method="GET">
+        <form class="input-group" action="" method="GET">
             <input
                 type="text"
                 class="form-control"
