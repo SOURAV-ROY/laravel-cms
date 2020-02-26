@@ -1,7 +1,7 @@
 @extends('layouts.blog')
 
 @section('title')
-    CATEGORY : {{$category->name}}
+    CATEGORY || {{$category->name}}
 @endsection
 
 @section('header')

@@ -35,9 +35,10 @@
         <hr>
 
         <h6 class="sidebar-title">Tags</h6>
+
         <div class="gap-multiline-items-1">
             @foreach($tags as $tag)
-                <a class="badge badge-secondary" href="#">
+                <a class="badge badge-secondary" href="{{route('blog.tag', $tag->id)}}">
                     {{$tag->name}}
                 </a>
             @endforeach

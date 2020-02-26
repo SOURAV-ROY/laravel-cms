@@ -22,7 +22,7 @@ class PostsController extends Controller
         if ($search) {
 
             $posts = $category->posts()
-                ->where('title', 'LIKE', "%{$search}%")->simplePaginate(1);
+                ->where('title', 'LIKE', "%{$search}%")->simplePaginate(2);
 
         } else {
 
@@ -39,7 +39,10 @@ class PostsController extends Controller
 
     public function tag(Tag $tag)
     {
-        return view('blog.tag')->with('tag', $tag)
+        return view('blog.tag')
+            ->with('tag', $tag)
+            ->with('categories', Category::all())
+            ->with('tags', Tag::all())
             ->with('posts', $tag->posts()->simplePaginate(2));
     }
 }
