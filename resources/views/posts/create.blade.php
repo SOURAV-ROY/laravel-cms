@@ -126,7 +126,8 @@
     <script>
         flatpickr('#published_at',
             {
-                enableTime: true
+                enableTime: true,
+                enableSeconds: true
             })
 
         // In your Javascript (external .js resource or <script> tag)
