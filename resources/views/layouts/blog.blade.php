@@ -35,6 +35,7 @@
         </div>
 
         <a class="btn btn-xs btn-round btn-info"
+           target="_blank"
            href="{{route('login')}}">Log In</a>
 
     </div>
