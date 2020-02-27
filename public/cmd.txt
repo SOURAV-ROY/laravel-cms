@@ -2,7 +2,7 @@ php artisan make:model Post -m  ******************************************* TRIX
 *************************************************************************** flatpickr https://flatpickr.js.org/ https://github.com/flatpickr/flatpickr *********
 php artisan make:model Category -m   ************************************** https://select2.org/tagging 
 *************************************************************************** https://sourav-cms.disqus.com/
-php artisan make:controller CategoriesController --resource
+php artisan make:controller CategoriesController --resource *************** https://www.addthis.com/
 ***********************************************************
 php artisan make:request Categories/CreateCategoryRequest
 ***********************************************************

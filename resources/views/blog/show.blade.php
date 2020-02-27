@@ -43,7 +43,12 @@
         <div class="section" id="section-content">
             <div class="container">
 
-                {!! $post->subtitle !!}
+            {!! $post->subtitle !!}
+
+
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox text-center"></div>
+
 
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
