@@ -35,7 +35,9 @@
                             @forelse($posts as $post)
 
                                 <div class="col-md-6">
-                                    <div class="card border hover-shadow-6 mb-6 d-block">
+                                    <div class="card border hover-shadow-6 mb-6 d-block"
+                                         style=" height: 450px ; border: 1px solid blue!important"
+                                    >
                                         <a href="{{route('blog.show', $post->id)}}">
                                             <img class="card-img-top img-fluid" src="/storage/{{$post->image}}"
                                                  style="max-height: 250px"
