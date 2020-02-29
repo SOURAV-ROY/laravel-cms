@@ -23,7 +23,7 @@ class WelcomeController extends Controller
         return view('welcome')
             ->with('categories', Category::all())
             ->with('tags', Tag::all())
-            ->with('posts', Post::searched()->latest()->simplePaginate(4));
+            ->with('posts', Post::searched()->orderBy('updated_at','DESC')->simplePaginate(4));
 //          ->with('posts', $posts);
 
 //          ->with('posts', Post::simplePaginate(2));

@@ -42,6 +42,11 @@
                                                  alt="Card image cap"
                                             >
                                         </a>
+
+                                        <div class="text-right">
+                                            {{$post->updated_at}}
+                                        </div>
+
                                         <div class="p-6 text-center">
                                             <p>
                                                 <a class="small-5 text-lighter text-uppercase ls-2 fw-400"

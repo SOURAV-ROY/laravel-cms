@@ -5,8 +5,11 @@
 @endsection
 
 @section('header')
-    <header class="header text-white h-fullscreen pb-80" style="background-image: url('/storage/{{ $post->image }}');"
-            data-overlay="9">
+    <header class="header text-white h-fullscreen pb-80"
+            style="background-image: url('/storage/{{ $post->image }}');"
+            data-overlay="9"
+    >
+
         <div class="container text-center">
 
             <div class="row h-100">
@@ -20,7 +23,7 @@
                         </a>
                     </p>
                     <p><img class="avatar avatar-sm" src="{{Gravatar::src($post->user->email)}}" alt="..."></p>
-
+                    {{$post->updated_at}}
                 </div>
 
                 <div class="col-12 align-self-end text-center">
