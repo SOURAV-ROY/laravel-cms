@@ -45,7 +45,7 @@
                                             >
                                         </a>
 
-                                        <div class="text-right">
+                                        <div class="text-right text-danger">
                                             {{$post->updated_at}}
                                         </div>
 

@@ -23,7 +23,7 @@
                         </a>
                     </p>
                     <p><img class="avatar avatar-sm" src="{{Gravatar::src($post->user->email)}}" alt="..."></p>
-                    {{$post->updated_at}}
+                    <p class="text-danger">{{$post->updated_at}}</p>
                 </div>
 
                 <div class="col-12 align-self-end text-center">
