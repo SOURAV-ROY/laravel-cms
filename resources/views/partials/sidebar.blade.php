@@ -1,4 +1,4 @@
-<div class="col-md-4 col-xl-3">
+<div class="col-md-4 col-xl-3" style="border: 1px solid purple">
     <div class="sidebar px-4 py-md-0">
 
         <h6 class="sidebar-title">Search</h6>
@@ -26,7 +26,7 @@
             @foreach($categories as $category)
                 <div class="col-6">
                     <a href="{{route('blog.category', $category->id)}}">
-                        {{$category->name}}
+                        {{$category->name}} <strong class="text-danger">{{$category->posts->count()}}</strong>
                     </a>
                 </div>
             @endforeach
