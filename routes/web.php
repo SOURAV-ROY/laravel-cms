@@ -13,9 +13,6 @@
 
 use App\Http\Controllers\Blog\PostsController;
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
 
 Route::get('/', 'WelcomeController@index')->name('welcome');
 
@@ -25,18 +22,8 @@ Route::get('blog/categories/{category}', [PostsController::class, 'category'])->
 
 Route::get('blog/tags/{tag}', [PostsController::class, 'tag'])->name('blog.tag');
 
-Auth::routes();
 
-//Route::get('/home', 'HomeController@index')->name('home');
-//
-//Route::resource('categories', 'CategoriesController');
-//
-////Route::resource('posts', 'PostsController')->middleware(['auth', 'verifyCategoriesCount']);
-//Route::resource('posts', 'PostsController')->middleware(['auth']);
-//
-//Route::get('trashed-posts', 'PostsController@trashed')->name('trashed-posts.index');
-//
-//Route::put('restore-post/{post}', 'PostsController@restore')->name('restore-posts');
+Auth::routes();
 
 
 Route::middleware(['auth'])->group(function () {
@@ -67,3 +54,14 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::post('users/{user}/make-admin', 'UsersController@makeAdmin')->name('users.make-admin');
 });
 
+
+//Route::get('/home', 'HomeController@index')->name('home');
+//
+//Route::resource('categories', 'CategoriesController');
+//
+////Route::resource('posts', 'PostsController')->middleware(['auth', 'verifyCategoriesCount']);
+//Route::resource('posts', 'PostsController')->middleware(['auth']);
+//
+//Route::get('trashed-posts', 'PostsController@trashed')->name('trashed-posts.index');
+//
+//Route::put('restore-post/{post}', 'PostsController@restore')->name('restore-posts');
