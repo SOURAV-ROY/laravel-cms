@@ -39,7 +39,7 @@
         <div class="gap-multiline-items-1">
             @foreach($tags as $tag)
                 <a class="badge badge-secondary" href="{{route('blog.tag', $tag->id)}}">
-                    {{$tag->name}}
+                    {{$tag->name}} <strong class="text-info font-weight-bold">{{$tag->posts->count()}}</strong>
                 </a>
             @endforeach
         </div>
