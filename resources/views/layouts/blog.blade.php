@@ -29,8 +29,8 @@
         <div class="navbar-left">
             <button class="navbar-toggler" type="button">&#9776;</button>
             <a class="navbar-brand" href="{{route('welcome')}}">
-                <img class="logo-dark" src="{{asset('img/logo-dark.png')}}" alt="logo">
-                <img class="logo-light" src="{{asset('img/logo-light.png')}}" alt="logo">
+                <img class="logo-dark" src="{{asset('img/SOURAV.PNG')}}" width="100px" alt="logo">
+                <img class="logo-light" src="{{asset('img/sourav-dark.png')}}" width="100px" alt="logo">
             </a>
         </div>
 

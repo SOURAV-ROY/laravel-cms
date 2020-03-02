@@ -18,7 +18,7 @@ class VerifyCategoriesCount
     {
         if (Category::all()->count() === 0) {
 
-            session()->flash('warning', 'You Need To Create Category First to able Create Post !!');
+            session()->flash('warning', 'You Need To Create Category First To Able Create Post !!');
 
             return redirect(route('categories.create'));
 
