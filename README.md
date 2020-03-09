@@ -1,6 +1,6 @@
 # CMS #
 
-**CATEGORIES** http://127.0.0.1:8000/categories
+[CATEGORIES](http://127.0.0.1:8000/categories)
 -----------------------------------------------
 
 **1. Create Category**
@@ -13,7 +13,7 @@
 1. NAME
 2. ACTIONS
 ```
-**TAGS** http://127.0.0.1:8000/tags
+[TAGS](http://127.0.0.1:8000/tags)
 -----------------------------------------------
 
 **1. Create Tags**
@@ -27,7 +27,7 @@
 2. ACTIONS
 ```
 
-**POSTS** http://127.0.0.1:8000/posts
+[POSTS](http://127.0.0.1:8000/posts)
 -------------------------------------
 
 

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71391d04-e37f-4ad0-b7bf-2226da1022ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="71391d04-e37f-4ad0-b7bf-2226da1022ff" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,6 +193,7 @@
       <workItem from="1582959030824" duration="8966000" />
       <workItem from="1583046960230" duration="1537000" />
       <workItem from="1583124733830" duration="5806000" />
+      <workItem from="1583170234286" duration="265000" />
     </task>
     <servers />
   </component>
@@ -206,10 +205,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="363" y="96" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1582790470055" />
-    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1582290170866">
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1583170504556">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1582290170866" />
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1583170504556" />
     <state x="518" y="292" key="NewPhpFileDialog" timestamp="1582710496443">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
