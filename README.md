@@ -44,8 +44,11 @@
 ```
 1. TITLE
 2. DESCRIPTION
-3. SUBTITLE
+3. CONTENT
 4. IMAGE
+5. CATEGORY
+7. TAGS
+6. PUBLISHDE_AT
 ```
 
 ## Relationship Between POST To Category
