@@ -48,7 +48,7 @@
 4. IMAGE
 5. CATEGORY
 7. TAGS
-6. PUBLISHDE_AT
+6. PUBLISHED_AT
 ```
 
 ## Relationship Between POST To Category
